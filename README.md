@@ -26,7 +26,7 @@ To run this locally
 1. Make sure you have NodeJS (v4.x.x and above) installed globally on your machine. Find
 the detailed installation instruction from https://nodejs.org/en/
 
-2. Clone this repo and run "npm install" , "npm run start" and open "local:8000" in browser.
+2. Clone this repo and run "npm install" , "npm run start" and open "localhost:8000/index.html" in browser.
 
 
 
