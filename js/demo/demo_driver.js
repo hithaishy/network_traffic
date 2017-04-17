@@ -1,6 +1,7 @@
 'use strict';
 (function () {
-		function d3CheckBox () {//taken from https://bl.ocks.org/Lulkafe/c77a36d5efb603e788b03eb749a4a714 and modified
+		function d3CheckBox () {
+			// checkbox taken from https://bl.ocks.org/Lulkafe/c77a36d5efb603e788b03eb749a4a714 and modified
 
 		var size = 20,
 		    x = 0,
@@ -251,7 +252,9 @@
 		},
 		switchElement = sP.swtch.newSwtch(demoSwitch, {oW:1,aR:1,oH:1,nW:2,nH:1}); // not passing anything in for pym will default to 1.
 		sP.swtch.renderSwtch(svg, switchElement);
-
+		window.onresize = function(){
+			d3.select('#chart').attr("width", $(window).width()-20).attr("height", $(window).height()-10);
+		}
 		var switchListener = svg.select("#" + demoSwitch.id)
 			.on("click", function() {
 				sP.swtch.toggleSwitch(svg,demoSwitch, {oW:1,aR:1,oH:1,nW:2,nH:1}) // again not passing any pym info in will default to 1.

@@ -5,10 +5,14 @@ html, body {
     overflow: hidden;
 }
 
-.demoContainer {
+#demoContainer {
     display: flex;
     justify-content: space-around;
-    height: 100%;
+    position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
 }
 
 .demoSectionWrapepr {
