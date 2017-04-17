@@ -7,7 +7,7 @@ http://bl.ocks.org/Neilos/584b9a5d44d5fe00f779
 
 Analyzing the data : 
 
-The Data used here has 4 types. Further it shows traffic and packets per link and per node. 
+The Data used here has 4 types. It shows traffic and packets per link and per node. 
 
 On double clicking the Type node, it will split into multiple objects which gives in depth information of traffic flow between different objects.
 
