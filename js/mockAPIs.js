@@ -69,7 +69,7 @@
         for (var i = 0; i < totalObjs; i++) {
             objects.push({
                 id: "obj" + (i + 1),
-                type: constants.types[_.random(4)]
+                type: constants.types[_.random(3)]
             });
             remainingObjs.add("obj" + (i + 1));
         }

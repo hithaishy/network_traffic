@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.demoContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.demoSectionWrapepr {
+    display: inline-block;
+    width: 98%;
+}
+
+.demoResponseList {
+    background-color: lightgrey;
+    margin: 0;
+    padding-right: 5px;
+    overflow-y: scroll;
+    height: calc(100% - 3px * 2 * 12);
+}
+
+.demoResponseList li {
+    list-style-type: decimal;
+    padding: 3px 0;
+    word-wrap: break-word;
+}
+
+.demoResponseList li + li {
+    border-top: 1px solid black; 
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.node rect {
+  cursor: move;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 1px 1px 2px #fff;
+  font-size: 0.8em;
+  font-family: sans-serif;
+}
+
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  padding: 3px;
+  width: auto;
+  height: auto;
+  background-color: #F2F2F2;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  -mox-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rbga(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.value {
+  white-space: pre-line;
+  margin: 0;
+}
+
+#mainFrame
+{
+	position: relative;
+	width: 550px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+.noselect {
+	cursor: pointer;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+  	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  	-khtml-user-select: none;    /* Konqueror */
+  	-moz-user-select: none;      /* Firefox */
+  	-ms-user-select: none;       /* IE/Edge */
+  	user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
